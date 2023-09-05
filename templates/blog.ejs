@@ -9,16 +9,14 @@
                 <h2><%- articulo.titulo %></h2>
                 <p><%- articulo.descripcion %></p>
                 <% if (articulo.imagen) {%>
-                    <%- articulo.imagen %>
+                    <img src='<%= articulo.imagen %>' style='max-width: 40%' alt='<%= articulo.alternativo %>' />
                 <%}%>
             </header>
-            <% articulo.secciones.forEach(function(seccion){%>
                 <section>
-                    <%- seccion %>
+                    <%- articulo.cuerpo %>
                 </section>
-            <%});%>
             <footer>
-                <%- articulo.pie %>
+                <p>by <strong><%= articulo.autor %></strong></p>
             </footer>
         </article>
         <br>
