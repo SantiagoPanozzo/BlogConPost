@@ -91,3 +91,23 @@ hr {
     color: #a239ca;
     width: 90vw;
 }
+
+button {
+    background-color: #a239ca;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    margin-left: 22px;
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color:white;
+    color: #a239ca;
+    cursor: pointer;
+}

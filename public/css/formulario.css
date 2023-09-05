@@ -2,3 +2,57 @@
     display: flex;
     flex-direction: row;
 }
+
+.campoentrada {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.campoentrada label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a239ca;
+}
+
+.campoentrada input {
+    border: none;
+    border-bottom: 2px solid #a239ca;
+    background-color: #0e0b16;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.campoentrada textarea {
+    border: none;
+    border-bottom: 2px solid #a239ca;
+    background-color: #0e0b16;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.submitbutton {
+    background-color: #a239ca;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    margin-left: 22px;
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.submitbutton:hover {
+    background-color: white;
+    color: #a239ca;
+    cursor: pointer;
+}
