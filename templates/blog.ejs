@@ -1,0 +1,29 @@
+<%- include('blog/antes-body.ejs'); -%>
+
+<body>
+<%- include('blog/body-header.ejs'); -%>
+<main>
+    <% articulos.forEach(function(articulo){ %>
+        <article>
+            <header>
+                <h2><%- articulo.titulo %></h2>
+                <p><%- articulo.descripcion %></p>
+                <% if (articulo.imagen) {%>
+                    <%- articulo.imagen %>
+                <%}%>
+            </header>
+            <% articulo.secciones.forEach(function(seccion){%>
+                <section>
+                    <%- seccion %>
+                </section>
+            <%});%>
+            <footer>
+                <%- articulo.pie %>
+            </footer>
+        </article>
+        <br>
+    <%});%>
+
+</main>
+<%- include('blog/body-footer.ejs') %>
+</body>
